@@ -1,0 +1,120 @@
+.dropdown {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  background-color: #f2f3f5;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.dropdown-wrapper {
+  margin: 0 16px 16px 16px;
+}
+
+.dropdown-input--wrapper {
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.dropdown-input {
+  width: 100%; 
+  box-sizing: border-box;
+  border: 0; 
+  outline: 'none';
+  height: 54px;
+  padding: 6px 16px;
+}
+
+.dropdown-arrow {
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  margin-right: 16px;
+  color: #9d9fa3;
+}
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-options-wraper {
+	background-color: #fff;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+	border-radius: 8px;
+	max-height: 200px;
+	position: absolute;
+	left: 0;
+	margin-top: 8px;
+	top: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.dropdown-options {
+	padding: 8px 0;
+	max-height: 198px;
+	overflow-y: auto;
+}
+
+.dropdown-options--item {
+  padding: 12px;
+	background-color: #fff;
+	color: #666666;
+	cursor: pointer;
+	display: block;
+}
+
+.dropdown-noresults {
+  text-align: center;
+	color: '#171A1F';
+	opacity: 0.5;
+	cursor: default;
+	display: block;
+	padding: 8px 10px;
+}
+
+.dropdown-selected-list {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.dropdown-selected-list--item {
+  margin: 3px 4px;
+  background-color: #007BFF;
+  padding: 4px 8px 6px 8px; 
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.close-icon {
+  margin-left: 4px;
+  margin-top: 3px;
+  cursor: pointer;
+}
